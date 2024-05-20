@@ -31,53 +31,73 @@ body {
     margin-bottom: 10px;
     position: relative;
 }
+
 .buttons {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
+    
 }
 
 .btn {
-    background-color: #f0f0f0;
+
+    height: 80px;
+    background-color: #726f6f;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    color: #fff;
     padding: 20px;
     font-size: 1.5em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.btnop {
 
-.btn:active, .btn:hover {
-    background-color: #ccc;
+    background-color: #f08a1e;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btnopc {
+    background-color: #ed240d;
+    border: none;
+    border-radius: 10px;
+    width: 63px;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-left: 255px;
 }
 
+
+.btn:active, .btn:hover {
+    background-color: #aca5a5;
+}
+
+.btn:active, .btnopc:hover {
+    background-color: #d05353;
+}
+.btn:active, .btnop:hover {
+    background-color: #c48741;
+}
 .equals {
-    background-color: #ff9500;
+    background-color: #17b246;
     color: #fff;
-    grid-column: span 2;
 }
 
 .equals:active, .equals:hover {
-    background-color: #e08a00;
+    background-color: #53c475;
 }
-
-/* Specific positioning for the first row */
 .btn-clear {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.btn-divide {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.btn-multiply {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-.btn-delete {
-    grid-column: 4 / 5;
     grid-row: 1 / 2;
 }
