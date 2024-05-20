@@ -3,7 +3,6 @@ This is a simple calculator application built with HTML, CSS, and JavaScript. Th
 
 Features
 Clear the display
-Delete the last entry
 Perform addition, subtraction, multiplication, and division
 Display the result of the calculations
 Files
